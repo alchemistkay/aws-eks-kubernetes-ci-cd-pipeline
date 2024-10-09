@@ -49,6 +49,9 @@ eksctl get fargateprofile --cluster my-cluster
 
 **Steps**
 ```sh
+# change to k8s-deployment folder
+cd k8s-deployment
+
 # install Mysql chart
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm install my-release bitnami/mysql -f mysql-chart-values-eks.yaml
