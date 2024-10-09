@@ -96,7 +96,7 @@ kubectl create secret -n my-app docker-registry my-registry-key \
 --docker-email=$DOCKER_EMAIL
 
 
-# Again from k8s-deployment folder, execute following commands. By adding the my-app namespace, these components will be created with Fargate profile
+#execute following commands. By adding the my-app namespace, these components will be created with Fargate profile
 kubectl apply -f db-secret.yaml -n my-app
 kubectl apply -f db-config.yaml -n my-app
 kubectl apply -f java-app.yaml -n my-app
@@ -113,6 +113,7 @@ kubectl apply -f java-app.yaml -n my-app
 - Replaced the external Docker repository with **Amazon ECR** for seamless integration with AWS services.
 - Jenkins pipeline now builds and pushes Docker images directly to **ECR**, ensuring AWS manages the repository, storage, and cleanup.
 
+**Steps**
 <details>
     <summary> 4 & 5: Automate deployment & Use ECR as Docker repository </summary>
  <br />
@@ -233,5 +234,5 @@ apt-get install -y gettext-base
 ### Steps to Reproduce:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/aws-eks-kubernetes-ci-cd-pipeline.git
+   git clone https://github.com/alchemistkay/aws-eks-kubernetes-ci-cd-pipeline.git
    cd aws-eks-kubernetes-ci-cd-pipeline
