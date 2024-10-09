@@ -1,2 +1,4 @@
-.idea/*
-target
+.idea
+build
+out
+.gradle*
