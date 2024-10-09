@@ -1,4 +1,4 @@
-# Kubernetes on AWS: EKS Cluster with CI/CD Pipeline
+# DevOps Portfolio: Kubernetes on AWS - EKS Cluster with CI/CD Pipeline
 
 This repository demonstrates a **Kubernetes deployment** on **AWS** using **EKS (Elastic Kubernetes Service)** with **CI/CD automation** via **Jenkins**. It showcases how to deploy and manage applications efficiently on AWS while leveraging **autoscaling** and **ECR (Elastic Container Registry)** for Docker image management.
 
