@@ -113,11 +113,6 @@ kubectl apply -f java-app.yaml -n my-app
 - Replaced the external Docker repository with **Amazon ECR** for seamless integration with AWS services.
 - Jenkins pipeline now builds and pushes Docker images directly to **ECR**, ensuring AWS manages the repository, storage, and cleanup.
 
-**Steps**
-<details>
-    <summary> 4 & 5: Automate deployment & Use ECR as Docker repository </summary>
- <br />
-
 **Current cluster setup**
 
 At this point, you already have an EKS cluster, where:
@@ -188,7 +183,6 @@ apt-get install -y gettext-base
 
 
 ```
-</details>
 
 
 ### 6. **Autoscaling Configuration**
